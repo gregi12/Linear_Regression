@@ -12,9 +12,13 @@ df.info()
 # Importing seaborn and setting style
 import seaborn as sns
 sns.set_style('whitegrid')
+# Exploring data a bit
 sns.jointplot(data = df,x = 'Time on Website',y='Yearly Amount Spent')
+plt.show()
 sns.jointplot(data = df,x = 'Time on App',y='Yearly Amount Spent')
+plt.show()
 sns.pairplot(df)
+plt.show()
 
 # splitting data intp train and test data
 from sklearn.model_selection import train_test_split
